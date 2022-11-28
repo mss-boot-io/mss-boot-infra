@@ -410,7 +410,7 @@ spec:
   type: ClusterIP
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: Daemonset
 metadata:
   labels:
     app.kubernetes.io/component: controller
@@ -421,6 +421,7 @@ metadata:
   name: ingress-nginx-controller
   namespace: ingress-nginx
 spec:
+  hostNetwork: true
   minReadySeconds: 0
   revisionHistoryLimit: 10
   selector:
