@@ -3,10 +3,10 @@ kind: Kustomization
 resources:
   - deploy.yaml
 # - https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/baremetal/deploy.yaml
-images:
-- name: registry.k8s.io/ingress-nginx/controller
-  newName: mssbootio/ingress-nginx-controller
-  newTag: v1.5.1
-- name: registry.k8s.io/ingress-nginx/kube-webhook-certgen
-  newName: mssbootio/ingress-nginx-kube-webhook-certgen
-  newTag: v20220916-gd32f8c343
+# images:
+# - name: registry.k8s.io/ingress-nginx/controller
+#   newName: mssbootio/ingress-nginx-controller
+#   newTag: v1.5.1
+# - name: registry.k8s.io/ingress-nginx/kube-webhook-certgen
+#   newName: mssbootio/ingress-nginx-kube-webhook-certgen
+#   newTag: v20220916-gd32f8c343
