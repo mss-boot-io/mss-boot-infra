@@ -400,7 +400,10 @@ spec:
     app.kubernetes.io/component: controller
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/name: ingress-nginx
-  type: ClusterIP
+  type: LoadBalancer
+  externalIPs:
+    - 192.168.0.33
+    - 192.168.0.198
 ---
 apiVersion: apps/v1
 kind: Deployment
