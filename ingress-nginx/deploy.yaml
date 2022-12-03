@@ -372,7 +372,7 @@ spec:
   sessionAffinity: None
   externalIPs:
     - 192.168.0.33
-    - 192.168.0.192
+    - 192.168.0.198
   ipFamilies:
   - IPv4
   ipFamilyPolicy: SingleStack
